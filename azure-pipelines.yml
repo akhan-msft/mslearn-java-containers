@@ -78,7 +78,7 @@ stages:
             displayName: Update the web app with the new container
             inputs:
               appName: $(WebAppName)
-              azureSubscription: 'Azure Connection'
+              azureSubscription: 'azure_connection'
               imageName: $(RegistryName)/$(webRepository):$(build.buildId)
           - task: AzureAppServiceSettings@1
             displayName: Update web app connection string
