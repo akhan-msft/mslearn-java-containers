@@ -83,7 +83,7 @@ stages:
           - task: AzureAppServiceSettings@1
             displayName: Update web app connection string
             inputs:
-              azureSubscription: 'Azure Connection'
+              azureSubscription: 'azure_connection'
               appName: $(WebAppName)
               resourceGroupName: 'java-containers-cicd-rgeast'
               connectionStrings: |
